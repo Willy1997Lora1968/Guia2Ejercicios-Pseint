@@ -76,7 +76,31 @@ mensaje por pantalla que diga “CORRECTO”, en caso contrario, se deberá impr
 “INCORRECTO”
 
 EJERCICIOS Estructuras de control con PseInt – Estructuras selectivas
-ENCUENTRO 6
+ENCUENTRO 5 EJercicios Extra:Guia2
+
+1. Realizar un programa que pida tres notas y determine si un alumno aprueba o reprueba un
+curso, sabiendo que aprobará el curso si su promedio de tres calificaciones es mayor o
+igual a 70; y reprueba en caso contrario.
+2. Una tienda ofrece para los meses de septiembre, octubre y noviembre un descuento del
+10% sobre el total de la compra que realiza un cliente. Solicitar al usuario que ingrese un
+mes y el importe de la compra. El programa debe calcular cuál es el monto total que se
+debe cobrar al cliente e imprimirlo por pantalla.
+3. Solicitar al usuario que ingrese dos números enteros y determinar si ambos son pares o
+impares. Mostrar en pantalla un mensaje que indique “Ambos números son pares” siempre
+y cuando cumplan con la condición. En caso contrario se deberá imprimir el siguiente
+mensaje “Los números no son pares, o uno de ellos no es par”.
+Nota: investigar la función mod de PseInt.
+4. La empresa “Te llevo a todos lados” está destinada al alquiler de autos y tiene un sistema
+de tarifa que consiste en cobrar el alquiler por hora. Si el cliente devuelve el auto dentro
+de las 2 horas de uso el valor que corresponde pagar es de $400 pesos y la nafta va de
+regalo. Cuando el cliente regresa a la empresa pasadas las 2 horas, se ingresan la
+cantidad de litros de nafta gastados y el tiempo transcurrido en horas. Luego, se le cobra
+40 pesos por litro de nafta gastado, y la hora se fracciona en minutos, cobrando un total
+de $5,20 el minuto de uso. Realice un programa que permita registrar esa información y el
+total a pagar por el cliente.
+
+EJERCICIOS Estructuras de control con PseInt – Estructuras selectivas
+Encuentro 6 EJercicios Practicos:Guia2
 
 1. Construir un programa que simule un menú de opciones para realizar las cuatro
 operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
@@ -103,36 +127,8 @@ Nota: para trabajar este ejercicio de manera prolija, ir probando cada inciso qu
 ejercicio. No hacer todos al mismo tiempo y después probar.
 
 
-1. Construir un programa que simule un menú de opciones para realizar las cuatro
-operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
-numéricos enteros. El usuario, además, debe especificar la operación con el primer
-carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’
-o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división.
-Condicionales Anidados
-
-2. Realizar un programa que, dado un número entero, visualice en pantalla si es par o impar.
-En caso de que el valor ingresado sea 0, se debe mostrar “el número no es par ni impar”.
-Nota: investigar la función mod de PSeInt
-
-3. Escriba un programa para obtener el grado de eficiencia de un operario de una fábrica de
-tornillos, de acuerdo a las siguientes dos condiciones que se le imponen para un período
-de prueba:
-• Producir menos de 200 tornillos defectuosos.
-• Producir más de 10000 tornillos sin defectos.
-• El grado de eficiencia se determina de la siguiente manera:
-• Si no cumple ninguna de las condiciones, grado 5.
-• Si sólo cumple la primera condición, grado 6.
-• Si sólo cumple la segunda condición, grado 7.
-• Si cumple las dos condiciones, grado 8
-Nota: para trabajar este ejercicio de manera prolija, ir probando cada inciso que pide el
-ejercicio. No hacer todos al mismo tiempo y después probar.
-
-EJERCICIOS EXTRA Estructuras de controlcon PseInt – Estructuras selectivas
-
-Realiza los siguiente ejecicios en Pseint 
-a)los ejercicio deben contener como comentario lo que debe realizar el codigo
-b)darle un nombre al ejercicio
-c)debe tener los comentarios dentro del algoritmo para que sea de facil entendimiento, estar bien identado 
+EJERCICIOS Estructuras de control con PseInt – Estructuras selectivas
+Encuentro 6 EJercicios Extra:Guia2
 
 1. Solicitar al usuario que ingrese un valor entre 1 y 7. EL programa debe mostrar por pantalla
 un mensaje que indique a qué día de la semana corresponde. Considere que el número 1
@@ -165,4 +161,57 @@ Nº DE KILOS COMPRADOS % DESCUENTO
 10%
 15%
 20%
-Determinar cuánto pagará una persona que compre manzanas en esa verdulería
+Determinar cuánto pagará una persona que compre manzanas en esa verdulería 
+
+7. El promedio de los trabajos prácticos de un curso se calcula en base a cuatro notas de las
+cuales se elimina la nota menor y se promedian las tres notas más altas. Escriba un
+programa que determine cuál es la nota eliminada y el promedio de los trabajos prácticos
+de un estudiante.
+
+Ejercicio cooperativo
+GUIA 2 y 3
+
+1. Realizar un programa que lea 5 números (comprendidos entre 1 y 20) e imprima el número
+ingresado seguido de tantos asteriscos como indique su valor. Por ejemplo:
+5 *****
+3 ***
+11 ***********
+2 **
+9 *********
+
+2. Escribir un programa que lea un número entero y devuelva el número de dígitos que
+componen ese número. Por ejemplo, si introducimos el número 12345, el programa
+deberá devolver 5. Calcular la cantidad de dígitos matemáticamente utilizando el operador
+de división. Nota: recordar que las variables de tipo entero truncan los números o
+resultados.
+
+3. Necesitamos crear un sistema para una máquina de reciclaje de botellas automática. Dicha
+máquina nos pagará dinero por la cantidad de plástico reciclado. Tenemos que ingresar
+nuestro usuario y contraseña para que se nos cargue el saldo por sistema a nuestra
+cuenta.
+• Condición simple anidada: validaremos que el usuario sea “Albus_D”, luego si esto es
+verdadero, validaremos si la contraseña es “caramelosDeLimon”. Si la contraseña es
+correcta haremos que una variable llamada Login sea verdadera.
+• Bucle Mientras: Este bloque de validación de la contraseña lo encerraremos en un
+bucle Mientras para darle al usuario sólo 3 intentos para poner la contraseña.
+• Bucle Hacer Mientras(Repetir): Una vez que el login sea verdadero, accederemos al
+menú de opciones:
+o Ingresar botellas
+o Consultar saldo
+o Salir
+• Ingresar Botellas: Primero preguntaremos cuántas botellas se va a ingresar al sistema.
+Una vez que tenemos el número vamos a usar un bucle para, a fin de ir ingresando
+cada botella. En cada ciclo del bucle se debe generar un número aleatorio entre 100 y
+3000 gr, que va a ser el peso de las botellas a reciclar (simulando que el usuario está
+ingresando botellas en la máquina). Una vez generado, según el peso del material,
+usaremos un condicional múltiple para asignarle un valor monetario:
+o Si es menos de 500 gr, corresponden $50
+o Si es entre 501 gr y 1500 gr, corresponden $125
+o Si es más de 1501 gr, corresponden $200
+Hecho esto, el programa debe informar al usuario por pantalla el valor que se le
+ofrece. Si el usuario acepta, lo acreditamos a su saldo, sino se debe devolver el
+material (sólo mostrar en pantalla “Devolviendo material”). Para esto usaremos un
+condicional doble.
+• Consultar saldo: revisaremos el valor monetario que tiene asignada la variable “saldo”.
+• Tanto al terminar “Ingresar Botellas” como “Consultar Saldo” debe volver al menú
+principal.
