@@ -178,11 +178,13 @@ ingresado seguido de tantos asteriscos como indique su valor. Por ejemplo:
 11 ***********
 2 **
 9 *********
+
 2. Escribir un programa que lea un número entero y devuelva el número de dígitos que
 componen ese número. Por ejemplo, si introducimos el número 12345, el programa
 deberá devolver 5. Calcular la cantidad de dígitos matemáticamente utilizando el operador
 de división. Nota: recordar que las variables de tipo entero truncan los números o
 resultados.
+
 3. Necesitamos crear un sistema para una máquina de reciclaje de botellas automática. Dicha
 máquina nos pagará dinero por la cantidad de plástico reciclado. Tenemos que ingresar
 nuestro usuario y contraseña para que se nos cargue el saldo por sistema a nuestra
@@ -212,4 +214,5 @@ material (sólo mostrar en pantalla “Devolviendo material”). Para esto usare
 condicional doble.
 • Consultar saldo: revisaremos el valor monetario que tiene asignada la variable “saldo”.
 • Tanto al terminar “Ingresar Botellas” como “Consultar Saldo” debe volver al menú
+principal.
 principal.
