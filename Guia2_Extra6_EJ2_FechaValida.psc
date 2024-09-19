@@ -1,27 +1,47 @@
-// Ejercicio 2: Fecha válida
-Proceso FechaValida
+Algoritmo FechaValida
+	Definir dia, mes, anio Como Entero;
+	Definir nombreMes Como Cadena;
+	Escribir "Ingrese el día:";
+	Leer dia;
+	Escribir "Ingrese el mes:";
+	Leer mes;
+	Escribir "Ingrese el anio:";
+	Leer anio;
 	
-	Definir dia, mes, ano Como Entero
-	
-	Escribir "Ingrese una fecha (día, mes, año):"
-	Leer dia, mes, ano
-	
-	Si dia >= 1 y dia <= 31 y mes >= 1 y mes <= 12 y ano > 0 Entonces
+	Si mes < 1 o mes > 12 Entonces
+		Escribir "Error: El mes debe estar entre 1 y 12.";
+	Sino
 		Segun mes Hacer
-			1: Escribir dia, " de enero de ", ano
-			2: Escribir dia, " de febrero de ", ano
-			3: Escribir dia, " de marzo de ", ano
-			4: Escribir dia, " de abril de ", ano
-			5: Escribir dia, " de mayo de ", ano
-			6: Escribir dia, " de junio de ", ano
-			7: Escribir dia, " de julio de ", ano
-			8: Escribir dia, " de agosto de ", ano
-			9: Escribir dia, " de septiembre de ", ano
-			10: Escribir dia, " de octubre de ", ano
-			11: Escribir dia, " de noviembre de ", ano
-			12: Escribir dia, " de diciembre de ", ano
+			caso 1:
+				nombreMes <- "enero";
+			caso 2:
+				nombreMes <- "febrero";
+			caso 3:
+				nombreMes <- "marzo";
+			caso 4:
+				nombreMes <- "abril";
+			caso 5:
+				nombreMes <- "mayo";
+			caso 6:
+				nombreMes <- "junio";
+			caso 7:
+				nombreMes <- "julio";
+			caso 8:
+				nombreMes <- "agosto";
+			caso 9:
+				nombreMes <- "septiembre";
+			caso 10:
+				nombreMes <- "octubre";
+			caso 11:
+				nombreMes <- "noviembre";
+			caso 12:
+				nombreMes <- "diciembre";
 		FinSegun
-	SiNo
-		Escribir "Fecha inválida."
+		
+		Si dia < 1 o dia > 31 o (mes = 2 y dia > 29 y ((anio mod 4 <> 0) o (anio mod 100 = 0 y anio mod 400 <> 0))) o ((mes = 4 o mes = 6 o mes = 9 o mes = 11) y dia > 30) Entonces
+			Escribir "Error: El día ingresado no es válido para el mes.";
+		Sino
+			Escribir dia, " de ", nombreMes, " de ", anio;
+		FinSi
 	FinSi
-FinProceso
+FinAlgoritmo

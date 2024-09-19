@@ -1,19 +1,31 @@
 // Ejercicio 1: Día de la semana
-Proceso DiaDeLaSemana
+Algoritmo DiaDeLaSemana
+	Definir numero Como Entero;
+	Definir dia Como Cadena;
+	Escribir "Ingrese un número entre 1 y 7:";
+	Leer numero;
 	
-	Definir num Como Entero
-	Escribir "Ingrese un número entre 1 y 7:"
-	
-	Leer num
-	Segun num Hacer
-		1: Escribir "Lunes"
-		2: Escribir "Martes"
-		3: Escribir "Miércoles"
-		4: Escribir "Jueves"
-		5: Escribir "Viernes"
-		6: Escribir "Sábado"
-		7: Escribir "Domingo"
-		De Otro Modo: Escribir "Número inválido. Debe ser un número entre 1 y 7."
+	Segun numero Hacer
+		caso 1:
+			dia <- "Lunes";
+		caso 2:
+			dia <- "Martes";
+		caso 3:
+			dia <- "Miércoles";
+		caso 4:
+			dia <- "Jueves";
+		caso 5:
+			dia <- "Viernes";
+		caso 6:
+			dia <- "Sábado";
+		caso 7:
+			dia <- "Domingo";
+		de otro modo:
+			Escribir "Error: El número debe estar entre 1 y 7.";
 	FinSegun
-FinProceso
+	
+	Si numero >= 1 y numero <= 7 Entonces
+		Escribir "El número ", numero, " corresponde al día ", dia, ".";
+	FinSi
+FinAlgoritmo
 

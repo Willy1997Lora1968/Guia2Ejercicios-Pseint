@@ -1,28 +1,31 @@
 // Ejercicio 7: Promedio de notas
-Proceso PromedioDeNotas
+Algoritmo PromedioNotas
+	Definir nota1, nota2, nota3, nota4, notaMenor, promedio Como Real;
+	Escribir "Ingrese la primera nota:";
+	Leer nota1;
+	Escribir "Ingrese la segunda nota:";
+	Leer nota2;
+	Escribir "Ingrese la tercera nota:";
+	Leer nota3;
+	Escribir "Ingrese la cuarta nota:";
+	Leer nota4;
 	
-	Definir notas[4] Como Entero
-	Definir i, j, temp, suma Como Entero
+	// Determinar la nota menor
+	notaMenor <- nota1;
+	Si nota2 < notaMenor Entonces
+		notaMenor <- nota2;
+	FinSi
+	Si nota3 < notaMenor Entonces
+		notaMenor <- nota3;
+	FinSi
+	Si nota4 < notaMenor Entonces
+		notaMenor <- nota4;
+	FinSi
 	
-	Para i <- 1 Hasta 4 Hacer
-		Escribir "Ingrese la nota ", i, ":"
-		Leer notas[i]
-	FinPara
+	// Calcular el promedio eliminando la nota menor
+	promedio <- (nota1 + nota2 + nota3 + nota4 - notaMenor) / 3;
 	
-	Para i <- 1 Hasta 4 Hacer
-		Para j <- i + 1 Hasta 4 Hacer
-			Si notas[i] > notas[j] Entonces
-				temp <- notas[i]
-				notas[i] <- notas[j]
-				notas[j] <- temp
-			FinSi
-		FinPara
-	FinPara
-	Escribir "La nota eliminada es: ", notas[1]
+	Escribir "La nota eliminada es: ", notaMenor;
+	Escribir "El promedio de las tres notas más altas es: ", promedio;
 	
-	suma <- 0
-	Para i <- 2 Hasta 4 Hacer
-		suma <- suma + notas[i]
-	FinPara
-	Escribir "El promedio de las tres notas más altas es: ", suma / 3
-FinProceso
+FinAlgoritmo 
